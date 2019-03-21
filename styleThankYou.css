@@ -1,0 +1,51 @@
+* {
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  html {
+    background-image: linear-gradient(#181818, #005419);
+    background-image: linear-gradient(#3D3D3D, #121212); 
+    background-color: #121212;
+    min-height: 100%
+  }
+  a[target="_blank"]::after {
+    color: white;
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 5px;
+  }
+
+    
+  #box-container{
+  /*  background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 20vh;
+  }
+  
+  .box-1{
+    width: 60%;
+    margin: 20px;
+  }
+  .box-2{
+    width: 60%;
+    margin: 20px;
+  }
+  .box-3{
+    width: 60%;
+    margin: 20px;
+  }
+  #playlistpushLink {
+    color: #E87190;
+  }
+  
+  #coupon{
+    color: lightblue;
+    
+  }
+  
+  /* background-color: #1db954; */
