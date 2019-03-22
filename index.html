@@ -16,7 +16,7 @@
   <div id="box-container">
     <div id="box-1"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/789oq8uxp4xRi9t4fNWQxa" width="300"
         height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <br><br>
+        <div class="followersCounter">roughly 250 followers</div>
       <div class="tags">
         #Energetic<br>
         #Aggressive<br>
@@ -27,7 +27,7 @@
 
     <div id="box-2"><iframe id="iframe-playlist2" src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1rNbWinCaCRoBxO598Y1SE"
         width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <br><br>
+        <div class="followersCounter">roughly 350 followers</div>
       <div class="tags">
         #Light<br>
         #Positive<br>
@@ -38,7 +38,7 @@
 
     <div id="box-3"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/4BSIiLTu7qzDZLDdkHaty9" width="300"
         height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <br><br>
+        <div class="followersCounter">roughly 450 followers</div>
       <div class="tags">
         #Quality<br>
         #Lyrics<br>
@@ -50,7 +50,7 @@
 
     <div id="box-4"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1siUb796okDFpHCK5CBzIF" width="300"
         height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <br><br>
+        <div class="followersCounter">roughly 550 followers</div>
       <div class="tags">
         #Chill<br>
         #Easy<br>
@@ -122,20 +122,21 @@
       <input id="inputEmailSender" class="inputField" type="email" name="emailSender" placeholder=" to get notified of playlist add" required></input>
     </div>
     <div class="right-align"><span class="question-2">Spotify track URL:</span>
-      <input id="inputSpotifyUrl" class="inputField" type="text" name="spotifyURL" placeholder=" e.g. https://open.spotify.com/track/5mCPDVB..."
+      <input id="inputSpotifyUrl" class="inputField" type="url" name="spotifyURL" placeholder=" e.g. https://open.spotify.com/track/5mCPDVB..."
         required></input>
     </div>
     <div class="right-align">
-      <input id="submitButton" title="Note: if you want better odds, consider supporting me, you only pay if you find placement!" type="submit" value="Submit" name="freeSubmit"></input>
+      <input id="submitButton" title="If you want way better odds, consider supporting me!" type="submit" value="Submit" name="freeSubmit" onclick="youSure()"></input>
       <!--<input type="hidden" name="_next"/>-->
     </div>
     <div style="position: relative; left: 135px; margin-top: 5px;">or...</div>
     <div class="right-align">
       <span style="margin-right: 14px;"></span>
-      <input id="submitButton2" title="Note: you only pay if your song finds placement!" type="submit" value="Submit & support me $5 💕" name="guaranteedSubmit"></input>
+      <input id="submitButton2" title="I will devote my life to getting you on one of my playlists (might contain slight exaggaration)" type="submit" value="Submit & support me 💕" name="guaranteedSubmit"></input>
     </div>
     <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
-    <div id="gfText">If you support me I will try incredibly hard at fitting your song in one of my playlists. <b>Only</b> if I find a fit, you will be emailed a $5 pay pal request <b>so you will never pay without result</b>. After completion of the pay pal request, your song will be added for atleast a month to the playlist mentioned in the pay pal request. You are always free to ignore the paypal request if you change your mind at any point.<br><br></span></div>
+    <div id="gfText">If you support me, I will try incredibly hard to find a spot for your song in one of my four playlists. If I find one, you will be emailed a pay pal request of <u style="color: lightgreen">$5</u>. You complete the request and your song will be added for the minimum of a month to the playlist mentioned in the pay pal request. You are always free to ignore the paypal request if you change your mind at any point.
+      <br><br></span></div>
   </form>
   </div>
 

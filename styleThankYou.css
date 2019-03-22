@@ -21,10 +21,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 800px;
     margin: auto;
     position: relative;
-    top: 20vh;
+    top: 25vh;
   }
   
   .box-1{

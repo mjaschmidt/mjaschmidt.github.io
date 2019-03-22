@@ -26,6 +26,7 @@ a[target="_blank"]::after {
   }
 
 #introduction {
+  display: none;
   color: white;
   box-sizing: border-box;
   margin: auto;
@@ -121,10 +122,10 @@ label {
 
 #submitButton {
   width: 330px;
-  background-color: #1db954;
+  background-color: #474747;
   color: white;
-  font-size: 14px;
-  height: 27px;
+  font-size: 13px;
+  height: 25px;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -137,17 +138,17 @@ label {
 }
 #submitButton:hover {
   border: 1px outset white;
-  background-color: rgb(65, 241, 127);
+  background-color: rgb(138, 101, 101);
   box-shadow: 0px 0px 5px 1px rgba(29, 185, 84, 0.5);
   /*transform: translateY(-3px);*/
 }
 
 #submitButton2 {
   width: 330px;
-  background-color: rgb(60, 161, 255);
+  background-color: #1db954;
   color: white;
-  font-size: 12px;
-  height: 27px;
+  font-size: 14px;
+  height: 30px;
   margin: 3px 1px;
   border-radius: 25px;
   border: none;
@@ -161,7 +162,7 @@ label {
 }
 #submitButton2:hover {
   border: 1px outset white;
-  background-color: rgb(128, 193, 255);
+  background-color: rgb(255, 128, 198);
   box-shadow: 0px 0px 5px 1px rgba(160, 209, 255, 0.596);
   /*transform: translateY(-3px);*/
 }
@@ -379,13 +380,16 @@ input[type=checkbox]:checked+label>img {
   margin: 0px;
   color: white;
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
   left: 10px;
   /* background-image: linear-gradient(to right, rgb(66, 58, 58), rgba(255, 0, 0, 0)); */
-  width: 50px;
-  height:43px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  width: 70px;
+  height: 43px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: rgb(18, 18, 18, 0.2);
 }
 
 a {
@@ -418,3 +422,15 @@ a:hover {
   font-size: 7px;
   content: 'but only if you like playlist! 😁';
 } */
+
+.followersCounter {
+  font-size: 10px;
+  position: relative;
+  bottom: 80px;
+  text-align: center;
+  background: rgb(18, 18, 18, 0.5);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 1px;
+  color: lightgrey;
+}
