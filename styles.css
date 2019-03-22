@@ -26,6 +26,7 @@ a[target="_blank"]::after {
   }
 
 #introduction {
+  display: none;
   font-family: 'Open Sans', sans-serif;
   color: white;
   box-sizing: border-box;
