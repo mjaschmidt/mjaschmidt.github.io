@@ -26,14 +26,26 @@ a[target="_blank"]::after {
   }
 
 #introduction {
-  display: none;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   box-sizing: border-box;
   margin: auto;
-  padding: 10px;
+
   text-align: center;
   border-radius: 20px;
+  max-width: 700px;
+  text-align: justify;
+  font-size: 14px;
 }
+#gfText {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  margin-top: 3px;
+  max-width: 700px;
+  font-size: 14px;
+  text-align: justify;
+}
+
 
 #box-container {
   /*  background-color: white; */
@@ -336,42 +348,6 @@ input[type=checkbox]:checked+label>img {
 .question-2 {
   position: relative;
   right: 11px;
-}
-
-#gfText {
-  float: right;
-  margin-top: 3px;
-  max-width: 330px;
-  font-size: 12px;
-  text-align: justify;
-}
-
-.feePrices {
-  position: relative;
-  float: right;
-  bottom: 70px;
-  width: 45px;
-  text-align: right;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding: 4px;
-  padding-right: 7px;
-  background-color:rgb(60, 161, 255) !important;
-  font-size: 12px;
-}
-
-.freePrices {
-  position: relative;
-  left: 145px;
-  bottom: 75px;
-  width: 41px;
-  text-align: right;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding: 4px;
-  padding-right: 10px;
-  background-color: #1db954 !important;
-  font-size: 13px;
 }
 .tags {
   font-size: 11px;
