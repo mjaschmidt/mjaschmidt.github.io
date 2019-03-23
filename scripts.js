@@ -5,6 +5,6 @@ function youSure(value){
 
     }
     else {
-    document.getElementById("inputEmailSender").value = "";
+    document.getElementById("inputEmail").value = "";
     }
 }
