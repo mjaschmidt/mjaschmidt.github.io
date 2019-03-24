@@ -4,8 +4,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(#3D3D3D, #121212);
-  background-color: #121212;
+  /* background-image: linear-gradient(rgb(61,61,61), rgb(18, 18, 18)); */
+  background-color: rgb(50, 50, 50);
   min-height: 1vh;
   color: white;
 }
@@ -28,12 +28,24 @@ body {
   max-width: 500px;
   font-size: 14px;
   text-align: justify;
+  padding: 10px;
 }
 
 #box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 550px) {
+  #box-container {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 90%;
+
 }
 
 #box-1 {
@@ -43,7 +55,7 @@ body {
   border-width: 1px;
   border-radius: 10px;
   width: 200px;
-  max-height: 180px;
+  height: 180px;
 }
 
 #box-2 {
@@ -54,7 +66,7 @@ body {
   border-radius: 10px;
   min-height: 180px;
   width: 200px;
-  max-height: 180px;
+  height: 180px;
 }
 
 #box-3 {
@@ -64,7 +76,7 @@ body {
   border-width: 1px;
   border-radius: 10px;
   width: 200px;
-  max-height: 180px;
+  height: 180px;
 }
 
 #box-4 {
@@ -74,7 +86,7 @@ body {
   border-width: 1px;
   border-radius: 10px;
   width: 200px;
-  max-height: 180px;
+  height: 180px;
 }
 
 iframe {
@@ -90,30 +102,38 @@ iframe {
 #submitButton {
   width: 100%;
   max-width: 400px;
-  background-color: #474747;
+  background-color: rgb(71, 71, 71);
+  border: none;
   /* text-transform: uppercase; */
   transition: all 0.15s ease-in-out;
 }
 
 #submitButton:hover {
-  background-color: rgb(138, 101, 101);
-  box-shadow: 0px 0px 5px 1px rgba(29, 185, 84, 0.5);
+  background-color: rgb(91, 91, 91);
+  /* box-shadow: 0px 0px 5px 1px rgba(29, 185, 84, 0.5); */
 }
 
 #submitButton2 {
   width: 100%;
+  height: 50px;
   max-width: 400px;
-  background-color: #1db954;
+  background-color: rgb(29, 185, 84);
+  border: none;
   /* text-transform: uppercase; */
   transition: all 0.15s ease-in-out;
 }
 
 #submitButton2:hover {
-  background-color: rgb(255, 128, 198);
-  box-shadow: 0px 0px 5px 1px rgba(160, 209, 255, 0.596);
+  background-color: rgb(49, 205, 104);
+
+  /* box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.596); */
+  #submitButton {
+    display: none;
+  }
 }
+
 .col {
-  width: 
+  width:
 }
 
 .container {
