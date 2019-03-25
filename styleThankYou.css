@@ -4,9 +4,7 @@
   }
   
   html {
-    background-image: linear-gradient(#181818, #005419);
-    background-image: linear-gradient(#3D3D3D, #121212); 
-    background-color: #121212;
+    background-color: rgb(40, 40, 40);
     min-height: 100%
   }
   a[target="_blank"]::after {
@@ -17,35 +15,29 @@
 
     
   #box-container{
-  /*  background-color: white; */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 800px;
+    width: 600px;
     margin: auto;
+    padding: 10px;
     position: relative;
-    top: 25vh;
   }
   
   .box-1{
-    width: 60%;
     margin: 20px;
   }
   .box-2{
-    width: 60%;
     margin: 20px;
   }
   .box-3{
-    width: 60%;
     margin: 20px;
   }
+
   #playlistpushLink {
     color: #E87190;
   }
-  
   #coupon{
-    color: lightblue;
-    
+    color: lightblue;  
   }
+  img {
+ 
+}
   
-  /* background-color: #1db954; */
