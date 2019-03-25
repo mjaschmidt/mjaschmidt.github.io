@@ -8,3 +8,7 @@ function youSure(value){
     document.getElementById("inputEmail").value = "";
     }
 }
+
+function updateSubject(value){
+    document.getElementById("emailSubject").value = document.getElementById("inputEmail").value;
+} 

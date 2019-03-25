@@ -70,7 +70,7 @@
     <form class="form-inline" action="https://formspree.io/mjaschmidtsubmissions@gmail.com" method="POST" />
     <div class="row">
       <div class="col form-group">
-        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Email" required>
+        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Email" onchange="updateSubject()" required>
       </div>
       <div class="col form-group">
         <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Spotify Track URL" required>
@@ -88,6 +88,7 @@
         title="If you want way better odds, consider supporting me!" type="submit" value="Submit & don't support"
         name="freeSubmit" onclick="youSure()">Submit & don't support</button>
     </div>
+    <input id="emailSubject" type="hidden" name="_subject" value="" />
     <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
     </form>
   </div>
