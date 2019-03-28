@@ -70,7 +70,8 @@
     <form class="form-inline" action="https://formspree.io/mjaschmidtsubmissions@gmail.com" method="POST" />
     <div class="row">
       <div class="col form-group">
-        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Email" onchange="updateSubject()" required>
+        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Email"
+          onchange="updateSubject()" required>
       </div>
       <div class="col form-group">
         <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Spotify Track URL" required>
@@ -78,15 +79,25 @@
     </div>
     <br>
     <div>
-      <button id="submitButton2" class="btn btn-primary form-control"
+      <button id="submitButton2" onmouseover="beatHearts();" onmouseout="stopHearts()"
+        class="btn btn-primary form-control"
         title="I will devote my life to getting you on one of my playlists (might contain slight exaggaration)"
-        type="submit" value="Submit & support me 💕" name="guaranteedSubmit">Submit & support me 💕<div
-          style="font-size:8px;">(higher success rate)</div></button>
+        type="submit" value="Submit & support me 💕" name="guaranteedSubmit">
+        <span style="z-index: auto">Submit & support me <span id="ogHeart">💕</span></span>
+        <div style="font-size:8px;">(higher success rate)</div>
+        <span id="beatinghearts">
+          <span id="heart" class="hearts">💕</span>
+          <!-- <span id="heart2" class="hearts">💕</span>
+          <span id="heart3" class="hearts">💕</span>
+          <span id="randEmo1" class="hearts">&nbsp</span>
+          <span id="randEmo2" class="hearts">&nbsp</span> -->
+        </span>
+      </button>
     </div>
     <div>
       <button id="submitButton" class="btn btn-primary form-control"
         title="If you want way better odds, consider supporting me!" type="submit" value="Submit & don't support"
-        name="freeSubmit" onclick="youSure()">Submit & don't support</button>
+        name="freeSubmit" onclick="youSure()" onmouseover="breakHeart()" onmouseout="repairHeart()">Submit & don't support</button>
     </div>
     <input id="emailSubject" type="hidden" name="_subject" value="" />
     <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
@@ -94,7 +105,7 @@
   </div>
 
   <div id="gfText">If you choose support me, I will go out of my way trying to find a spot for your song. If I find a
-    spot, you will be emailed a <u style="color: lightgreen">$5</u> pay pal request. You complete the request and your
+    spot, you will be emailed a $<u style="color: white">7</u> pay pal request. You complete the request and your
     song will be added for a <b>month</b> (at least!) to the playlist mentioned in the request. You are always free to
     ignore the pay pal request if you change your mind.
   </div>
