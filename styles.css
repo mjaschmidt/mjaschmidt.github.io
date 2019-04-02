@@ -104,7 +104,9 @@ iframe {
   width: 100%;
   max-width: 400px;
   background-color: rgb(71, 71, 71);
+  background: none;
   border: none;
+  border: 1px white solid;
   /* text-transform: uppercase; */
   transition: all 0.15s ease-in-out;
 }
@@ -119,7 +121,10 @@ iframe {
   height: 45px;
   max-width: 400px;
   background-color: rgb(29, 185, 84);
+  background: none;
   border: none;
+  border: 1px white solid;
+  border-top: none;
   transition: all 0.15s ease-in-out;
 }
 
@@ -209,7 +214,7 @@ a[target="_blank"]::after {
 
 #heart {
   overflow: hidden;
-  animation: beating 2s infinite;
+  /* animation: beating 2s infinite; */
   position: relative;
   left: 77px;
   bottom: 1px;
@@ -229,6 +234,16 @@ a[target="_blank"]::after {
   display: none;
   opacity: 0;
   animation-delay: 1.31s;
+}
+
+#arrow1 {
+  visibility: hidden;
+  font-size: 20px;
+}
+
+#arrow2 {
+  visibility: hidden;
+  font-size: 20px;
 }
 
 @keyframes beating {

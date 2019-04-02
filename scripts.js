@@ -24,7 +24,7 @@ let randomInt = 0;
 // }
 
 function beatHearts() {
-    document.getElementById("beatinghearts").style.visibility = "visible";
+    // document.getElementById("beatinghearts").style.visibility = "visible";
     // randNum();
     // document.getElementById('heart').innerHTML = emoteArray[randomInt];
 }
@@ -33,6 +33,19 @@ function stopHearts() {
     document.getElementById("beatinghearts").style.visibility = "hidden";
 }
 
+function showArrow() {
+    document.getElementById("arrow1").style.visibility = "visible";
+}
+function showArrow2() {
+    document.getElementById("arrow2").style.visibility = "visible";
+}
+
+function hideArrow() {
+    document.getElementById("arrow1").style.visibility = "hidden";
+}
+function hideArrow2() {
+    document.getElementById("arrow2").style.visibility = "hidden";
+}
 // function breakHeart(){
 //     document.getElementById("ogHeart").innerHTML = "💔";
 // }
