@@ -70,14 +70,19 @@
     <form class="form-inline" action="https://formspree.io/mjaschmidtsubmissions@gmail.com" method="POST" />
     <div class="row">
       <div class="col form-group">
-        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Email"
+        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Your email"
           onchange="updateSubject()" required>
       </div>
       <div class="col form-group">
-        <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Spotify Track URL" required>
+        <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your Spotify Track URL" required>
       </div>
     </div>
     <br>
+    <div>
+      <button id="submitButton" class="btn btn-primary form-control"
+        title="If you want better odds, consider supporting me!" type="submit" value="Submit & don't support"
+        name="freeSubmit" onclick="youSure()" onmouseover="breakHeart()" onmouseout="repairHeart()">Submit</button>
+    </div>
     <div>
       <button id="submitButton2" onmouseover="beatHearts();" onmouseout="stopHearts()"
         class="btn btn-primary form-control"
@@ -87,17 +92,8 @@
         <div style="font-size:8px;">(higher success rate)</div>
         <span id="beatinghearts">
           <span id="heart" class="hearts">💕</span>
-          <!-- <span id="heart2" class="hearts">💕</span>
-          <span id="heart3" class="hearts">💕</span>
-          <span id="randEmo1" class="hearts">&nbsp</span>
-          <span id="randEmo2" class="hearts">&nbsp</span> -->
         </span>
       </button>
-    </div>
-    <div>
-      <button id="submitButton" class="btn btn-primary form-control"
-        title="If you want way better odds, consider supporting me!" type="submit" value="Submit & don't support"
-        name="freeSubmit" onclick="youSure()" onmouseover="breakHeart()" onmouseout="repairHeart()">Submit & don't support</button>
     </div>
     <input id="emailSubject" type="hidden" name="_subject" value="" />
     <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />

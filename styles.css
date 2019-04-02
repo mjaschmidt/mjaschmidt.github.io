@@ -100,7 +100,7 @@ iframe {
 }
 
 #submitButton {
-  color: lightgrey;
+  color: white;
   width: 100%;
   max-width: 400px;
   background-color: rgb(71, 71, 71);
@@ -111,7 +111,7 @@ iframe {
 
 #submitButton:hover {
   color: white;
-  /* background-color: rgb(91, 91, 91); */
+  background-color: rgb(81, 81, 81);
 }
 
 #submitButton2 {
@@ -203,22 +203,17 @@ a[target="_blank"]::after {
   font-size: 14px;
 }
 
+#ogHeart {
+  z-index: 10;
+}
+
 #heart {
   overflow: hidden;
-  animation: beating 1s infinite;
+  animation: beating 2s infinite;
   position: relative;
   left: 77px;
   bottom: 1px;
 }
-
-/* #heart2 {
-  overflow: hidden;
-  animation: beating2 0.5s infinite;
-  position: relative;
-  left: 90px;
-  bottom: 1px;
-  animation-delay: 1.7;
-} */
 
 #heart3 {
   opacity: 0;
@@ -237,29 +232,15 @@ a[target="_blank"]::after {
 }
 
 @keyframes beating {
-  0% {opacity: 0.1; position: relative; bottom: 1px;}
-  10% {opacity: 0.3; position: relative; bottom: 1px; left: 78px;}
-  20% {opacity: 0.6; position: relative; bottom: 1px;}
-  30% {opacity: 0.7; position: relative; bottom: 2px; left: 78px;}
-  40% {opacity: 0.8; position: relative; bottom: 3px;}
-  50% {opacity: 1.0; position: relative; bottom: 5px; left: 123px;}
-  60% {opacity: 0.6; position: relative; bottom: 8px;}
-  70% {opacity: 0.4; position: relative; bottom: 10px; left: 125px;}
-  80% {opacity: 0.3; position: relative; bottom: 14px;}
-  90% {opacity: 0.2; position: relative; bottom: 15px; left: 127px;}
-  100% {opacity: 0.0; position: relative; bottom: 16px; left: 130px;}
+  0% {opacity: 0.0; position: relative; bottom: 1px;}
+  10% {opacity: 0.1; position: relative; bottom: 1px; left: 79px;}
+  20% {opacity: 0.2; position: relative; bottom: 2px;}
+  30% {opacity: 0.3; position: relative; bottom: 4px; left: 78px;}
+  40% {opacity: 0.4; position: relative; bottom: 5px;}
+  50% {opacity: 0.5; position: relative; bottom: 7px; left: 80px;}
+  60% {opacity: 0.7; position: relative; bottom: 9px;}
+  70% {opacity: 0.8; position: relative; bottom: 11px; left: 77px;}
+  80% {opacity: 0.6; position: relative; bottom: 13px;}
+  90% {opacity: 0.3; position: relative; bottom: 15px; left: 81px;}
+  100% {opacity: 0.0; position: relative; bottom: 16px; left: 76px;}
 }
-
-/* @keyframes beating2 {
-  0% {opacity: 0.1; position: relative; bottom: -px;}
-  10% {opacity: 0.3; position: relative; bottom: -0px; left: 78px;}
-  20% {opacity: 0.6; position: relative; bottom: -1px;}
-  30% {opacity: 0.7; position: relative; bottom: -2px; left: 78px;}
-  40% {opacity: 0.8; position: relative; bottom: -3px;}
-  50% {opacity: 1.0; position: relative; bottom: -5px; left: 123px;}
-  60% {opacity: 0.6; position: relative; bottom: -8px;}
-  70% {opacity: 0.4; position: relative; bottom: -10px; left: 125px;}
-  80% {opacity: 0.3; position: relative; bottom: -14px;}
-  90% {opacity: 0.2; position: relative; bottom: -15px; left: 127px;}
-  100% {opacity: 0.0; position: relative; bottom: -16px; left: 130px;}
-} */
