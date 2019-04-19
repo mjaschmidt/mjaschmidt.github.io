@@ -31,14 +31,23 @@ body {
   padding: 10px;
 }
 
+#playlistsAbove {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 #box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 680px) {
   #box-container {
+    display: none;
+  }
+  #playlistsAbove {
     display: none;
   }
 }
@@ -81,6 +90,15 @@ body {
 
 #box-4 {
   background-image: url(https://pl.scdn.co/images/pl/default/baed86a20d38a38ec5fc48572efd38589fb48b06);
+  background-size: cover;
+  margin: 10px;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 200px;
+  height: 180px;
+}
+#box-5 {
+  background-image: url(https://pl.scdn.co/images/pl/default/30adfd16e38ba4745fbe3766d65504030c9d3cea);
   background-size: cover;
   margin: 10px;
   border-width: 1px;
