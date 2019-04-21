@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit your song</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="styles2.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../js/codeAcademy.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="animate.css">
+
+</head>
+
+<body class="animated">
+    <div id="bodyContainer">
+  <div id="box-container" class="animated flipInX">
+    <div id="box-1"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/789oq8uxp4xRi9t4fNWQxa"
+        width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <a href="https://open.spotify.com/playlist/789oq8uxp4xRi9t4fNWQxa" target="_blank" title="Open playlist"></a>
+    </div>
+
+    <div id="box-2" class="animate"><iframe id="iframe-playlist2"
+        src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1rNbWinCaCRoBxO598Y1SE" width="300" height="380"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <a href="https://open.spotify.com/playlist/1rNbWinCaCRoBxO598Y1SE" target="_blank" title="Open playlist"></a><br>
+    </div>
+
+    <div id="box-3"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/4BSIiLTu7qzDZLDdkHaty9"
+        width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <a href="https://open.spotify.com/playlist/4BSIiLTu7qzDZLDdkHaty9" target="_blank" title="Open playlist"></a>
+    </div>
+
+    <div id="box-4"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1siUb796okDFpHCK5CBzIF"
+        width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <a href="https://open.spotify.com/playlist/1siUb796okDFpHCK5CBzIF" target="_blank" title="Open playlist"></a>
+    </div>
+
+    <div id="box-5"><iframe src=https://open.spotify.com/embed/user/mjaschmidt/playlist/4h9R7i8LUdYMFd3zddV6uJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <a href="https://open.spotify.com/playlist/4h9R7i8LUdYMFd3zddV6uJ" target="_blank" title="Open playlist"></a>
+  </div>
+  </div>
+  <div id="playlistsAbove" class="animated fadeInDown"><center>Above, are the playlists your song might end up in. They all contain roughly 60 songs and have between 300 and 600 real organic followers.</center></div>
+
+  <br>
+  <div class="container">
+    <form class="form-inline" action="https://formspree.io/mjaschmidtsubmissions@gmail.com" method="POST" />
+    <div class="row">
+      <div class="col">
+        <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Your email"
+          onchange="updateSubject()" required>
+      </div>
+      <div class="col">
+        <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your spotify track URL" required>
+      </div>
+    </div>
+    <br>
+    <div>
+        
+      <button id="submitButton" class="btn btn-default form-control"
+        title="For better odds, consider supporting me!" type="submit" value="Submit & don't support"
+        name="freeSubmit" onclick="youSure()" onmouseover="showArrow()" onmouseout="hideArrow()">SUBMIT</button>
+    </div>
+    <hr>
+    <div>
+      <button id="submitButton2" onmouseover="beatHearts(); showArrow2()" onmouseout="stopHearts(); hideArrow2()"
+        class="btn btn-primary form-control animated pulse"
+        title="I will devote my life to getting you on one of my playlists (might contain slight exaggaration)"
+        type="submit" value="Submit & support me 💕" name="guaranteedSubmit">
+        <span style="z-index: auto">SUBMIT & SUPPORT ME <span id="ogHeart">💕</span></span>
+        <div style="font-size:9px;">(higher success rate)</div>
+        <span id="beatinghearts">
+          <span id="heart" class="hearts">💕</span>
+        </span>
+      </button>
+    </div>
+    <input id="emailSubject" type="hidden" name="_subject" value="" />
+    <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
+    </form>
+  </div>
+  <div id="gfText">Supporting me means I'll make a special effort to find a spot for your song. If I find a
+    spot, you will be emailed a <u style="color: lightgreen">$5</u> PayPal request. After completion your
+    song will be added for a <b>month</b> (at least!) to the playlist mentioned in the request. You are always free to
+    ignore the PayPal request if you change your mind.<br><br>
+
+    I put a lot of work in curating my playlists so I appreciate people that recognize that and want to give something back for featuring them! 💙
+  </div>
+</div>
+
+</body>
+
+</hmtl>
