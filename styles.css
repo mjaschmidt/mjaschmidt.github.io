@@ -163,9 +163,10 @@ iframe {
 
 #submitButton {
   font-weight: bold;
-  color: white;
+  color: lightgray;
   width: 100%;
   max-width: 400px;
+  height: 35px;
   background-color: rgb(65, 65, 65);;
   border-radius: 50px;
   border: none;
@@ -184,7 +185,7 @@ iframe {
   border-radius: 50px;
   font-weight: bold;
   width: 100%;
-  height: 45px;
+  height: 40px;
   max-width: 400px;
   background-color: rgb(24, 168, 75);
   border: none;
@@ -217,7 +218,7 @@ hr {
 
 hr:after {
     background: rgb(40, 40, 40);
-    content: 'OR';
+    content: 'Or... if you want better odds';
     padding: 0 4px;
     position: relative;
     top: -13px;
