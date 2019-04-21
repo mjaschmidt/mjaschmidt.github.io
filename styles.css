@@ -24,7 +24,7 @@ body {
 #gfText {
   font-family: 'Open Sans', sans-serif;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 500px;
   font-size: 14px;
   text-align: justify;
@@ -149,7 +149,7 @@ iframe {
   border: 1px white solid;
 }
 #or {
-  margin: 4px;
+  margin: 5px;
 }
 
 .col {

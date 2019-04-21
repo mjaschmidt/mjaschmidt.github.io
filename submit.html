@@ -15,10 +15,12 @@
   <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="animate.css">
+
 </head>
 
-<body>
-  <div id="box-container">
+<body class="animated">
+  <div id="box-container" class="animated flipInX">
     <div id="box-1"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/789oq8uxp4xRi9t4fNWQxa"
         width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <div class="followersCounter">roughly 300 followers</div>
@@ -30,7 +32,7 @@
       <a href="https://open.spotify.com/playlist/789oq8uxp4xRi9t4fNWQxa" target="_blank">Open</a>
     </div>
 
-    <div id="box-2"><iframe id="iframe-playlist2"
+    <div id="box-2" class="animate hinge"><iframe id="iframe-playlist2"
         src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1rNbWinCaCRoBxO598Y1SE" width="300" height="380"
         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <div class="followersCounter">roughly 400 followers</div>
@@ -97,11 +99,11 @@
     <div id="or">or</div>
     <div>
       <button id="submitButton2" onmouseover="beatHearts(); showArrow2()" onmouseout="stopHearts(); hideArrow2()"
-        class="btn btn-primary form-control"
+        class="btn btn-primary form-control animated pulse"
         title="I will devote my life to getting you on one of my playlists (might contain slight exaggaration)"
         type="submit" value="Submit & support me 💕" name="guaranteedSubmit">
         <span style="z-index: auto"><span id="arrow2" style="float: left">➡</span>Submit & support me <span id="ogHeart">💕</span></span>
-        <div style="font-size:8px;">(higher success rate)</div>
+        <div style="font-size:9px;">(higher success rate)</div>
         <span id="beatinghearts">
           <span id="heart" class="hearts">💕</span>
         </span>
@@ -111,11 +113,12 @@
     <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
     </form>
   </div>
-
-  <div id="gfText">If you choose support me, I will try as hard as I can and make every effort to find a spot for your song. If I find a
+  <div id="gfText">Supporting me means I'll make a special effort to find a spot for your song. If I find a
     spot, you will be emailed a <u style="color: lightgreen">$5</u> PayPal request. You complete the request and your
     song will be added for a <b>month</b> (at least!) to the playlist mentioned in the request. You are always free to
-    ignore the PayPal request if you change your mind.
+    ignore the PayPal request if you change your mind.<br><br>
+
+    I put a lot of work in curating my playlists so I appreciate people that recognize that and want to give something back for featuring them! 💙
   </div>
 
 </body>
