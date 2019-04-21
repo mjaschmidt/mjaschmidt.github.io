@@ -218,7 +218,7 @@ hr {
 
 hr:after {
     background: rgb(40, 40, 40);
-    content: 'Or... if you want better odds';
+    content: 'Or... for better odds';
     padding: 0 4px;
     position: relative;
     top: -13px;
