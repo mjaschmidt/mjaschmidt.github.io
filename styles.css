@@ -5,10 +5,17 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   /* background-image: linear-gradient(rgb(61,61,61), rgb(18, 18, 18)); */
-  background-color: rgb(65, 65, 65);
-  background: linear-gradient(#868686, #202020);
+  background-color: rgb(255, 238, 0);
+  background: linear-gradient(#606060, #202020);
   min-height: 1vh;
   color: white;
+  background: repeating-linear-gradient(
+  45deg,
+  #454545,
+  #454545 10px,
+  #404040 10px,
+  #404040 20px
+);
 }
 
 #bodyContainer {
@@ -25,12 +32,14 @@ body {
     border: none;
     width: 100%;
     max-width: 400px;
+    margin: 2px;
 }
 #inputURL {
     background: #202020;
     border: none;
     width: 100%;
     max-width: 400px;
+    margin: 1px;
 }
 
 #header {
@@ -55,7 +64,8 @@ body {
 }
 
 #playlistsAbove {
-  margin-top: 20px;
+  margin-top: 18px;
+  margin-bottom: 16px;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -200,10 +210,6 @@ hr:after {
     padding: 0 4px;
     position: relative;
     top: -13px;
-}
-
-.col {
-  width:
 }
 
 .container {
