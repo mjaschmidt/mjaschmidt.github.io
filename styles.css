@@ -64,10 +64,11 @@ body {
 }
 
 #playlistsAbove {
-  margin-top: 18px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+  padding: 10px;
 }
 
 #rotate {
