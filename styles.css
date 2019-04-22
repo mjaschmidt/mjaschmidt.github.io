@@ -22,19 +22,7 @@ body {
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
-  #box-container {
-    display: none;
-  }
 
-  #playlistsAbove {
-    display: none;
-  }
-
-  #rotate {
-    display: block;
-  }
-}
 
 #box-container {
   display: flex;
@@ -168,4 +156,18 @@ hr:after {
   text-align: justify;
   padding: 10px;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #box-container {
+    display: none;
+  }
+
+  #playlistsAbove {
+    display: none;
+  }
+
+  #rotate {
+    display: block;
+  }
 }
