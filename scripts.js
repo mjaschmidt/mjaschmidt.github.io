@@ -1,11 +1,24 @@
-// function youSure(value) {
+var c = 0;
 
-//     if (window.confirm("Supporting me gives your song better odds and you only pay if you can get actual placement. Continue submitting without support?")) {
+var randGif = ["https://media.giphy.com/media/B2kr8Cs97oRHHhstzH/giphy.gif",
+    "https://media.giphy.com/media/oVjZP4roPdWdbpmLu8/giphy.gif",
+    "https://media.giphy.com/media/1xne60wzrdpy7szbhP/giphy.gif",
+    "https://media.giphy.com/media/l3q2wJsC23ikJg9xe/giphy.gif",
+    "https://media.giphy.com/media/l1KulDCUYbZJLbrIQ/giphy.gif",
+    "https://media.giphy.com/media/3o7btP17Unyoa9wHgA/giphy.gif",
+    "https://media.giphy.com/media/3o7btNjOiYvr4L9QZ2/giphy.gif",
+    "https://media.giphy.com/media/13hxeOYjoTWtK8/giphy.gif",
+    "https://media.giphy.com/media/1TJB4TPjtaEJq/giphy.gif",
 
-//     } else {
-//         document.getElementById("inputEmail").value = "";
-//     }
-// }
+];
+var randNum = Math.floor(Math.random() * ((randGif.length - 1) - 0 + 1));
+
+function randomGif() {
+    if (c < 1) {
+        document.getElementById('pic').setAttribute("src", randGif[randNum]);
+        c = c + 1;
+    }
+}
 
 function updateSubject(value) {
     document.getElementById("emailSubject").value = document.getElementById("inputEmail").value;

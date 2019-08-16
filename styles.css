@@ -5,12 +5,8 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   min-height: 1vh;
-  color: white;
-  background: repeating-linear-gradient(45deg,
-    #454545,
-    #454545 10px,
-    #404040 10px,
-    #404040 20px);
+  color: rgb(240, 240, 240);
+  background-color: #373737;
 }
 
 #bodyContainer {
@@ -20,9 +16,9 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin: auto;
+  filter: drop-shadow(3px 3px 7px #101010);
+
 }
-
-
 
 #box-container {
   display: flex;
@@ -48,6 +44,7 @@ a {
   bottom: 29px;
   padding: 5px;
   transition: all 0.15s ease-in-out;
+  border-top-right-radius: 10px;
 }
 
 a:hover {
@@ -56,7 +53,7 @@ a:hover {
 
 a[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
-  margin: 0 3px 0 5px;
+  margin: 0 3px -1 5px;
 }
 
 #playlistsAbove {
@@ -76,6 +73,7 @@ a[target="_blank"]::after {
 }
 
 #inputEmail {
+  color: rgb(40, 255, 115);
   background: #202020;
   border: none;
   width: 100%;
@@ -84,6 +82,7 @@ a[target="_blank"]::after {
 }
 
 #inputURL {
+  color: rgb(40, 255, 115);
   background: #202020;
   border: none;
   width: 100%;
@@ -92,7 +91,7 @@ a[target="_blank"]::after {
 }
 
 #submitButton {
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(24, 168, 75);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: rgb(247, 247, 247);
@@ -106,56 +105,11 @@ a[target="_blank"]::after {
 
 #submitButton:hover {
   color: white;
-  background-color: rgb(81, 81, 81);
-}
-
-#submitButton2 {
-  background-color: rgb(24, 168, 75);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  height: 40px;
-  width: 100%;
-  max-width: 400px;
-  border-radius: 50px;
-  border: none;
-  transition: all 0.15s ease-in-out;
-}
-
-#submitButton2:hover {
   background-color: rgb(30, 202, 90);
-}
-
-hr {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  color: rgb(145, 145, 145);
-  border: none;
-  border-top: 3px double rgb(68, 68, 68);
-  margin-bottom: 13px;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
-  max-width: 80%;
-}
-
-hr:after {
-  background: rgb(40, 40, 40);
-  content: 'Or... for the price of a coffee...';
-  padding: 0 4px;
-  position: relative;
-  top: -13px;
 }
 
 #formcontainer {
   text-align: center;
-}
-
-#gfText {
-  font-family: 'Open Sans', sans-serif;
-  text-align: justify;
-  padding: 10px;
-  margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {
