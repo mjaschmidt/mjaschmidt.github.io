@@ -59,8 +59,7 @@ iframe {
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
   padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 5px;
+  margin-top: 3px;
 }
 
 #faq {
@@ -109,6 +108,7 @@ iframe {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: rgb(247, 247, 247);
+  margin-top: 3px;
   height: 35px;
   width: 100%;
   max-width: 400px;
