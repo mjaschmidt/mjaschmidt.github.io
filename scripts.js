@@ -23,3 +23,4 @@ function randomGif() {
 function updateSubject(value) {
     document.getElementById("emailSubject").value = document.getElementById("inputEmail").value;
 }
+

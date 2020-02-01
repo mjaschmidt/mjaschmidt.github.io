@@ -21,32 +21,48 @@
 <body>
   <div id="bodyContainer">
     <div id="box-container" class="animated flipInX">
-      <div class="box"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/789oq8uxp4xRi9t4fNWQxa"
+      <div class="box"><iframe src=https://open.spotify.com/embed/playlist/4wqsTRPEhAmkQty2Xg3cZN"
+        width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <a href="https://open.spotify.com/playlist/4wqsTRPEhAmkQty2Xg3cZN" target="_blank" class="newTab" title="Open playlist"></a>
+    </div>
+    <div class="box"><iframe src=https://open.spotify.com/embed/playlist/1lbetlBe5owxNgkGe0bzp8"
+      width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <a href="https://open.spotify.com/playlist/1lbetlBe5owxNgkGe0bzp8" target="_blank" class="newTab" title="Open playlist"></a>
+  </div>
+  <div class="box"><iframe src=https://open.spotify.com/embed/playlist/1xgIt5zE3mZDegVwfjXUED"
+    width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <a href="https://open.spotify.com/playlist/1xgIt5zE3mZDegVwfjXUED" target="_blank" class="newTab" title="Open playlist"></a>
+</div>
+      <div class="box"><iframe src="https://open.spotify.com/embed/playlist/789oq8uxp4xRi9t4fNWQxa"
           width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <a href="https://open.spotify.com/playlist/789oq8uxp4xRi9t4fNWQxa" target="_blank" title="Open playlist"></a>
+        <a href="https://open.spotify.com/playlist/789oq8uxp4xRi9t4fNWQxa" target="_blank" class="newTab" title="Open playlist"></a>
       </div>
-      <div class="box"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1rNbWinCaCRoBxO598Y1SE"
+      <div class="box"><iframe src="https://open.spotify.com/embed/playlist/1rNbWinCaCRoBxO598Y1SE"
           width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <a href="https://open.spotify.com/playlist/1rNbWinCaCRoBxO598Y1SE" target="_blank" title="Open playlist"></a>
+        <a href="https://open.spotify.com/playlist/1rNbWinCaCRoBxO598Y1SE" target="_blank" class="newTab" title="Open playlist"></a>
       </div>
-      <div class="box"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/4BSIiLTu7qzDZLDdkHaty9"
+      <div class="box"><iframe src="https://open.spotify.com/embed/playlist/4BSIiLTu7qzDZLDdkHaty9"
           width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <a href="https://open.spotify.com/playlist/4BSIiLTu7qzDZLDdkHaty9" target="_blank" title="Open playlist"></a>
+        <a href="https://open.spotify.com/playlist/4BSIiLTu7qzDZLDdkHaty9" target="_blank" class="newTab" title="Open playlist"></a>
       </div>
-      <div class="box"><iframe src="https://open.spotify.com/embed/user/mjaschmidt/playlist/1siUb796okDFpHCK5CBzIF"
+      <div class="box"><iframe src="https://open.spotify.com/embed/playlist/1siUb796okDFpHCK5CBzIF"
           width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <a href="https://open.spotify.com/playlist/1siUb796okDFpHCK5CBzIF" target="_blank" title="Open playlist"></a>
+        <a href="https://open.spotify.com/playlist/1siUb796okDFpHCK5CBzIF" target="_blank" class="newTab" title="Open playlist"></a>
       </div>
-      <div class="box"><iframe src=https://open.spotify.com/embed/user/mjaschmidt/playlist/4h9R7i8LUdYMFd3zddV6uJ"
+      <div class="box"><iframe src=https://open.spotify.com/embed/playlist/4h9R7i8LUdYMFd3zddV6uJ"
           width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <a href="https://open.spotify.com/playlist/4h9R7i8LUdYMFd3zddV6uJ" target="_blank" title="Open playlist"></a>
+        <a href="https://open.spotify.com/playlist/4h9R7i8LUdYMFd3zddV6uJ" target="_blank" class="newTab" title="Open playlist"></a>
       </div>
     </div>
 
-    <div id="playlistsAbove" class="animated fadeInDown">Your song will end up in one of the playlists above. They all
-      have roughly 60 songs and are followed by real people.</div>
+
+    <div id="playlistsAbove" class="animated fadeInDown">
+    Submission is free—the only requirement is to share one of my playlists on your social media or on Reddit.
+    <!-- Your song will be put in the playlist I think fits best so it has nothing to do 
+    with which playlist you choose to share, so pick one you genuinely like 😊 -->
+    </div>
     <div id="rotate" class="animated fadeInDown">
-      <center>Rotate phone to view the playlists you are submitting to.</center>
+      <center>Please rotate your phone or use a device with a wider screen.</center>
     </div>
 
     <div id="formcontainer">
@@ -60,6 +76,10 @@
           <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your spotify track URL"
             required>
         </div>
+        <div>
+          <input id="inputSocial" class="form-control" type="url" name="socialURL" placeholder="URL to the post (Instagram/Twitter/Reddit)"
+            required>
+        </div>
       </div>
       <br>
       <div>
@@ -70,5 +90,14 @@
       <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
       </form>
     </div>
+    <div id="faq">
+    <br><b><u>Q: How do I share on Reddit?</b></u> &nbsp <i>A: Pick one below:</i>
+    <br>* <a href="https://www.reddit.com/r/spotify/submit" target="_blank">https://www.reddit.com/r/spotify/submit</a>
+    <br>* <a href="https://www.reddit.com/r/SpotifyHHH/submit" target="_blank">https://www.reddit.com/r/SpotifyHHH/submit</a>
+    <br>* <a href="https://www.reddit.com/r/spotifyplaylists/submit" target="_blank">https://www.reddit.com/r/spotifyplaylists/submit</a>
+    <br>
+    <br><b><u>Q: How do I get the playlist URL?</b></u>
+    &nbsp <i>A: Click the green button on the playlist, and then copy the URL.</i>
+  </div>
 </body>
 </hmtl>
