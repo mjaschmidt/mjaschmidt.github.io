@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+    
+}
+
+body {
+    min-height: 1vh;
+    background: #242424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #502c3d, #5a5a5a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #502c2e, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+}
+
+#box-container {
+    margin: auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    max-width: 315px;
+    margin: 10px;
+    background-color: rgb(46, 46, 46);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 3px 5px;
+    border-style: groove;
+    border-width: thin;
+    opacity: .8;
+}
+
+.box:hover{
+    opacity: 1;
+    border-style: groove;
+    border-width: thick;
+
+}
+
+a {
+    position: relative;
+    bottom: 15px;
+    z-index: 5;
+    background-color: rgb(24, 168, 75);
+    color: white;
+    border-radius: 10px;
+    font-size: smaller;
+    padding: 4px;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(30, 202, 90);
+    text-decoration: none;
+}
+/* #box-1{
+      background-color: rgb(151, 165, 165);
+  }
+
+  #box-2{
+    background-color: rgb(151, 165, 165);
+}
+
+#box-3{
+    background-color: rgb(117, 0, 65);
+}
+
+#box-4{
+    background-color: rgb(75, 10, 10);
+} */
