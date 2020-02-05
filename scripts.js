@@ -1,3 +1,20 @@
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      alert('made it unsivible')
+    } else {
+      content.style.display = "block";
+      alert('made it visible')
+    }
+  });
+}
+
 var c = 0;
 
 var randGif = ["https://media.giphy.com/media/B2kr8Cs97oRHHhstzH/giphy.gif",
@@ -23,4 +40,3 @@ function randomGif() {
 function updateSubject(value) {
     document.getElementById("emailSubject").value = document.getElementById("inputEmail").value;
 }
-
