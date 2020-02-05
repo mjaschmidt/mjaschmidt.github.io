@@ -127,6 +127,13 @@ iframe {
 }
 
 @media screen and (max-width: 600px) {
+#formcontainer {
+  display: none;
+}
+#faq {
+  display: none;
+}
+
   #box-container {
     display: none;
   }
