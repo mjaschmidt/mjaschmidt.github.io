@@ -40,3 +40,8 @@ function randomGif() {
 function updateSubject(value) {
     document.getElementById("emailSubject").value = document.getElementById("inputEmail").value;
 }
+
+function warningFunction() {
+  document.getElementById("warning").style.display ='block'
+
+}

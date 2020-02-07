@@ -216,3 +216,8 @@ iframe {
   overflow: hidden;
   background-color: #202020;
 }
+
+#warning {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+}
