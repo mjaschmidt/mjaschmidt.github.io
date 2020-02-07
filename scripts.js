@@ -26,7 +26,12 @@ var randGif = ["https://media.giphy.com/media/B2kr8Cs97oRHHhstzH/giphy.gif",
     "https://media.giphy.com/media/3o7btNjOiYvr4L9QZ2/giphy.gif",
     "https://media.giphy.com/media/13hxeOYjoTWtK8/giphy.gif",
     "https://media.giphy.com/media/1TJB4TPjtaEJq/giphy.gif",
-
+    "https://media.giphy.com/media/YMwXJF08akvYYhOVSp/giphy.gif",
+    "https://media.giphy.com/media/lYiTUzjJVj9DRm7A4j/giphy.gif",
+    "https://media.giphy.com/media/ZBVg1lrzEhd4T7TrhU/giphy.gif",
+    "https://media.giphy.com/media/XHFUlggKBLo2wFCT9x/giphy.gif",
+    "https://media.giphy.com/media/cgh25bl5dgK3u/giphy.gif",
+    "https://media.giphy.com/media/h4y3IKB139174YlYgf/giphy.gif",
 ];
 var randNum = Math.floor(Math.random() * ((randGif.length - 1) - 0 + 1));
 
