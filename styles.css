@@ -44,11 +44,14 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 500px;
+  margin: auto;
 
 }
 
 .box-recent {
   margin: 2px 2px;
+  margin-top: 20px;
   width: 80px;
   height: 80px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -98,8 +101,8 @@ body {
 }
 
 #latestSubmissions {
-  margin: 10px;
-  margin-top: 15px;
+
+  margin-top: 20px;
   color: lightgray;
 }
 
