@@ -42,7 +42,7 @@ body {
 
 #box-container-2 {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
   max-width: 500px;
   margin: auto;
