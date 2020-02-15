@@ -25,13 +25,14 @@ body {
 #bigbox-1 {
   min-width: 300px;
   max-width: 350px;
-  margin-right: 10px;
+  margin-left: 5px;
   margin-bottom: 0px;
 }
 
 #bigbox-2 {
   min-width: 200px;
   max-width: 350px;
+  margin-right: 5px;
 }
 
 #box-container {
@@ -130,7 +131,8 @@ body {
 }
 
 #latestSubmissions {
-  color: lightgray;
+  /* color: lightgray; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 #lastUpdated {
@@ -172,8 +174,8 @@ iframe {
 #playlistsAbove {
   font-family: 'Open Sans', sans-serif;
   text-align: justify;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #rotate {
@@ -298,8 +300,9 @@ iframe {
 #faq {
   font-family: 'Open Sans', sans-serif;
   margin-top: 2px;
-  font-size: 13px;
+  font-size: 14px;
   color: lightgray;
+  text-align: justify;
 }
 
 

@@ -22,9 +22,60 @@
 
 <body>
   <div id="bodyContainer">
+    <div id="bigbox-2">
+      <div id="faq" class="animated fadeIn delay-1s faster">
+        <center><b><u>The submission process (2 steps)</u></b></center>
+
+        <br>
+        <ol>
+          <li class="animated fadeIn delay-1s">Share a playlist on your IG story. Which playlist you pick has no bearing
+            on which playlist your song will end up in, so pick one you genuinely like.</li>
+          <!-- <button type="button" class="collapsible animated fadeInLeft delay-2s">Does it matter which playlist I share?</button>
+            <div class="content">No. Your song will be put in the playlist it fits best (and with many followers).
+              So pick a playlist you genuinely like to share. 😊</div> -->
+
+          <!-- <button type="button" class="collapsible animated fadeInLeft delay-3s">How do I share a playlist?</button>
+              <div class="content">Click the green button on the playlist, and then in the Spotify app, select share.</div> -->
+          <br>
+          <span class="animated fadeIn delay-2s">In return, you receive a detailed review of your song. If your song
+            qualifies for placement, there is one more step:</span><br><br>
+
+          <li class="animated fadeIn delay-3s">On IG, make a seperate highlight or post of the playlist you get featured
+            in. Keep this on your profile as long as the song is in the playlist.</li>
+
+        </ol>
+        <br>
+        <center class="animated fadeIn delay-4s slower">That's all! 🙌</center>
+        <br>
+        <!-- <center>FAQ before submission</center>
+
+        <button type="button" class="collapsible animated fadeInRight delay-2s">Why are submissions closed until Sunday 16 Feb.</button>
+        <div class="content">I am changing the sharing technicalities a bit to make it more beneficial for both of us 😊 Should only take a couple hours, so Saturday evening you can probably submit. -->
+        <!-- <br>
+          <br>It's important to view the submission process from the perspective of the artist and
+           consider what's reasonable to ask of an artist (in terms of sharing a playlist) for review of a song and for placement of a song.
+           <br><br>
+           If you have happen to have any thoughts on this matter, feel free to email mjaschmidtsubmissions@gmail.com, I appreciate any suggestions.
+                     -->
+        <!-- I will be taking into account the following:
+          <ul>
+          <li>People don't want to share a playlist before being placed in one. Makes sense.</li>
+          <li>Twitter is not as effective as Instagram. So likely will no longer be an option.</li>
+        </ul> 
+        The new system will likely be as follows:
+        <ul>
+        <li>You share the playlist on your IG story (only 24 hours) to qualify for consideration.</li>
+        <li>In return, you receive a full review of the song and whether you qualify for placement.</li>
+        <li>If you qualify and want to be placed, you make an IG post or IG highlight of the playlist you will be placed in.</li>
+      </ul>
+      If you have any thoughts, please email me at mjaschmidtsubmissions@gmail.com. I appreciate all suggestions. -->
+
+      </div>
+
+    </div>
     <div id="bigbox-1">
-      <div id="viewContent" class="">
-        <center><a href="\" target="_blank">View content of the playlists</a></center>
+      <div id="viewContent" class="animated tada delay-5s slow">
+        <center><a href="\" target="_blank">View content of my playlists</a></center>
       </div>
       <div id="box-container" class="">
         <div class="box"><iframe src=https://open.spotify.com/embed/playlist/4wqsTRPEhAmkQty2Xg3cZN" width="300"
@@ -71,41 +122,42 @@
 
 
       <div id="playlistsAbove" class="animated">
-        Submission is free—the only requirement is to share one of my playlists on your social media or on Reddit.
-        <!--  -->
+        <center>Pick from the playlists above. Click the green button to open the playlist in Spotify, and then select
+          share.</center>
       </div>
 
       <div id="formcontainer">
         <form class="form-inline" action="https://formspree.io/mjaschmidtsubmissions@gmail.com" method="POST" />
         <div>
           <div>
-            <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Your email"
-              onchange="updateSubject()" required disabled>
+            <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Your email."
+              onchange="updateSubject()" required>
           </div>
           <div>
-            <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your spotify track URL"
-              required disabled>
+            <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your spotify track URL."
+              required>
           </div>
           <div>
             <input id="inputSocial" class="form-control" type="url" name="socialURL"
-              placeholder="URL to the post/story highlight (IG/Twitter/Reddit)" onfocus="warningFunction()" required disabled>
+              placeholder="Instagram URL to the story, post or highlight." onfocus="warningFunction()" required>
           </div>
         </div>
-        <div id="warning">
+        <!-- <div id="warning"> -->
           <!-- <sub>1. I check whether you actually shared one of my playlists before I check out your song. (duh!
             right?)
             So don't fill in some random link in the third field, because the submission will be ignored. -->
-          1. If this field does not link to a post sharing one of my playlists—the submission will be ignored.
-          <br>
+          <!-- 1. If this field does not link to a post sharing one of my playlists—the submission will be ignored.
+          <br> -->
           <!-- 2. if you share through IG story—make sure to add the story as highlight otherwise I will not be able to
             verify it once it expires—meaning it won't count! -->
-          2. If you share through IG story—make sure to add the story as Highlight—otherwise submission will be ignored!
-          </sub>
+          <!-- 2. If you share through IG story—make sure to add the story as Highlight—otherwise submission will be ignored!
+          </sub> -->
 
         </div>
         <div>
           <button id="submitButton" class="btn btn-default form-control" title="" type="submit"
-            value="Submit & don't support" name="freeSubmit" onclick="youSure()" disabled><!--SUBMIT-->Submissions closed until Sunday 16 Feb.</button>
+            value="Submit & don't support" name="freeSubmit" onclick="youSure()">
+            S U B M I T</button>
         </div>
         <input id="emailSubject" type="hidden" name="_subject" value="" />
         <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
@@ -113,50 +165,8 @@
       </div>
     </div>
 
-    <div id="bigbox-2">
-      <div id="faq" class="animated fadeIn delay-1s faster">
-        <center>FAQ before submission</center>
 
-        <button type="button" class="collapsible animated fadeInRight delay-2s">Why are submissions closed until Sunday 16 Feb.</button>
-        <div class="content">I am changing the sharing technicalities a bit to make it more beneficial for both of us 😊 Should only take a couple hours, so Saturday evening you can probably submit.
-          <!-- <br>
-          <br>It's important to view the submission process from the perspective of the artist and
-           consider what's reasonable to ask of an artist (in terms of sharing a playlist) for review of a song and for placement of a song.
-           <br><br>
-           If you have happen to have any thoughts on this matter, feel free to email mjaschmidtsubmissions@gmail.com, I appreciate any suggestions.
-                     -->
-          <!-- I will be taking into account the following:
-          <ul>
-          <li>People don't want to share a playlist before being placed in one. Makes sense.</li>
-          <li>Twitter is not as effective as Instagram. So likely will no longer be an option.</li>
-        </ul> 
-        The new system will likely be as follows:
-        <ul>
-        <li>You share the playlist on your IG story (only 24 hours) to qualify for consideration.</li>
-        <li>In return, you receive a full review of the song and whether you qualify for placement.</li>
-        <li>If you qualify and want to be placed, you make an IG post or IG highlight of the playlist you will be placed in.</li>
-      </ul>
-      If you have any thoughts, please email me at mjaschmidtsubmissions@gmail.com. I appreciate all suggestions. -->
-
-        </div>
-
-        <!-- <button type="button" class="collapsible animated fadeInRight delay-2s">Does it matter which playlist I share?</button>
-        <div class="content">No. Your song will be put in the playlist it fits best (and with many followers).
-          So pick a playlist you genuinely like to share. 😊</div>
-        <button type="button" class="collapsible animated fadeInRight delay-3s">How do I get the playlist URL?</button>
-        <div class="content">Click the green button on the playlist, and then copy the URL.</div>
-        <button type="button" class="collapsible animated fadeInRight delay-4s">Is sharing through my IG Story OK?</button>
-        <div class="content">Only if you add the story to a Highlight so it remains on your profile.
-        </div>
-        <button type="button" class="collapsible animated fadeInRight delay-5s">How do I share on Reddit?</button>
-        <div class="content">Pick one below:
-          <br>* <a href="https://www.reddit.com/r/spotify/submit" target="_blank">reddit.com/r/spotify/submit</a>
-          <br>* <a href="https://www.reddit.com/r/SpotifyHHH/submit" target="_blank">reddit.com/r/SpotifyHHH/submit</a>
-          <br>* <a href="https://www.reddit.com/r/spotifyplaylists/submit"
-            target="_blank">reddit.com/r/spotifyplaylists/submit</a> -->
-
-        </div>
-        <!-- <button type="button" class="collapsible">What guarantee do I have that you add me?</button>
+    <!-- <button type="button" class="collapsible">What guarantee do I have that you add me?</button>
         <div class="content">
           All submissions get a detailed review, so you can be sure I really listen to your song. If your song is
           actually
@@ -165,41 +175,47 @@
           <br><br>
           Worst case scenario is that you only get a detailed review out of this which will help you improve your music
           😉 -->
-          <!--
+    <!--
         <a href="https://drive.google.com/drive/folders/1UAgBSLWCZInX1cJgbKmIDhJDRmEUnqSH?usp=sharing" target="_blank" style="text-decoration:underline">Click here</a>
         to see the reviews and placements of all songs that have been submitted (since Feb. 5).-->
-        </div>
-        <!-- <button type="button" class="collapsible">What determines whether I get added?</button>
+  </div>
+  <!-- <button type="button" class="collapsible">What determines whether I get added?</button>
         <div class="content">
           The quality of your post and the quality of your song.
           <!--
         <a href="https://drive.google.com/drive/folders/1UAgBSLWCZInX1cJgbKmIDhJDRmEUnqSH?usp=sharing" target="_blank" style="text-decoration:underline">Click here</a>
         to see the reviews and placements of all songs that have been submitted (since Feb. 5).-->
-        </div>
-      </div>
-    </div>
+  </div>
+  </div>
+  </div>
   </div>
   <div id="submissionSection" class="animated fadeInUp delay-5s slower">
     <div id="bottom-box">
+      <br>
       <div id="big-box-1">
-        <center><div style="font-family: 'Open Sans', sans-serif;">FAQ after submission</div></center>
-        
+        <br>
+        <center>
+          <div style="font-family: 'Open Sans', sans-serif; margin-bottom: 5px;"><b>After submission FAQ</b>&nbsp
+            &nbsp<sub>(click to expand)</sub></div>
+        </center>
+
         <button type="button" class="collapsible collapsible2">Why is my song not showing up here?</button>
         <div class="content">Either I have not updated the "Latest submissions" yet, or your submission was ignored
-          because it did not include an URL to a post/story sharing one of my playlists.</div>
-          <button type="button" class="collapsible collapsible2">How long will my song be pending?</button>
-          <div class="content">It usually takes about 5 days before the song gets reviewed and possibly placed. </div>
+          because it did not include an URL to a story sharing one of my playlists.</div>
+        <button type="button" class="collapsible collapsible2">How long will my song be pending?</button>
+        <div class="content">It usually takes about 3 days before the song gets reviewed. </div>
         <button type="button" class="collapsible collapsible2">Why is my song disqualified?</button>
-        <div class="content">The URL no longer links to a post sharing one of my playlists. Perhaps you deleted the post
-          or forgot to Highlight the IG story?</div>
-          <button type="button" class="collapsible collapsible2">Where can I find my review and placement?</button>
-          <div class="content">You can find it <a href="http://tiny.cc/sdqujz" target="_blank">here</a> once it's reviewed.</div>
+        <div class="content">The highlight or post sharing the playlist is not visible on your profile.</div>
+        <button type="button" class="collapsible collapsible2">Where can I find my review and placement?</button>
+        <div class="content">You can find it <a href="http://tiny.cc/sdqujz" target="_blank">here</a> once it's
+          reviewed.</div>
 
       </div>
 
 
       <div id="big-box-2">
         <div id="latestSubmissions">
+          <br>
           <center>Latest submissions</center>
         </div>
         <div id="lastUpdated">
@@ -209,38 +225,38 @@
         <div id="box-container-2">
 
           <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/5s8yD1uwe9dUSJm3IiPiYa" width="300"
-            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          <span class="pendingreview"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Pending</a>
-          </span>
-          <br>
-          <span class="date">15 Feb.</span>
-          <br>
-          <span class="name"><a href="https://open.spotify.com/track/5s8yD1uwe9dUSJm3IiPiYa" style="color: lightgreen"
-              target="_blank">Stargazing</a></span>
-        </div>
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="pendingreview"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Pending</a>
+            </span>
+            <br>
+            <span class="date">15 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/5s8yD1uwe9dUSJm3IiPiYa" style="color: lightgreen"
+                target="_blank">Stargazing</a></span>
+          </div>
 
 
           <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/3S9gSXaYBn8q6yWCp6XaTf" width="300"
-            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          <span class="pendingreview"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Pending</a>
-          </span>
-          <br>
-          <span class="date">14 Feb.</span>
-          <br>
-          <span class="name"><a href="https://open.spotify.com/track/3S9gSXaYBn8q6yWCp6XaTf" style="color: lightgreen"
-              target="_blank">Codes Zu Den-</a></span>
-        </div>
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="pendingreview"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Pending</a>
+            </span>
+            <br>
+            <span class="date">14 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/3S9gSXaYBn8q6yWCp6XaTf" style="color: lightgreen"
+                target="_blank">Codes Zu Den-</a></span>
+          </div>
 
-        <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/6HliH0G7frzP3zHeJjs9oZ" width="300"
-          height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        <span class="pendingreview"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Pending</a>
-        </span>
-        <br>
-        <span class="date">14 Feb.</span>
-        <br>
-        <span class="name"><a href="https://open.spotify.com/track/6HliH0G7frzP3zHeJjs9oZ" style="color: lightgreen"
-            target="_blank">Heartbreak's on-</a></span>
-      </div>
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/6HliH0G7frzP3zHeJjs9oZ" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="pendingreview"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Pending</a>
+            </span>
+            <br>
+            <span class="date">14 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/6HliH0G7frzP3zHeJjs9oZ" style="color: lightgreen"
+                target="_blank">Heartbreak's on-</a></span>
+          </div>
 
 
           <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/72itdUT1v7mzwRdSPG0elz" width="300"
@@ -267,7 +283,8 @@
 
           <div class="box-recent"><iframe src="https://open.spotify.com/embed/album/0gC6zcY2qKg7McVHAQiqh6" width="300"
               height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <span class="disqualified"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Disqualified</a>
+            <span class="disqualified"><a href="http://tiny.cc/sdqujz" style="color: white"
+                target="_blank">Disqualified</a>
             </span>
             <br>
             <span class="date">11 Feb.</span>
@@ -332,7 +349,7 @@
         </div> -->
       </div>
     </div>
-  <!-- <center><sub style="font-family: 'Open Sans', sans-serif; color: lightgray">Contact: mjaschmidtsubmissions@gmail.com</sub></center><br> -->
+    <!-- <center><sub style="font-family: 'Open Sans', sans-serif; color: lightgray">Contact: mjaschmidtsubmissions@gmail.com</sub></center><br> -->
   </div>
 
   <script>
