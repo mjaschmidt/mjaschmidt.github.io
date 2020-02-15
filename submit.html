@@ -80,15 +80,15 @@
         <div>
           <div>
             <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Your email"
-              onchange="updateSubject()" required>
+              onchange="updateSubject()" required disabled>
           </div>
           <div>
             <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your spotify track URL"
-              required>
+              required disabled>
           </div>
           <div>
             <input id="inputSocial" class="form-control" type="url" name="socialURL"
-              placeholder="URL to the post/story highlight (IG/Twitter/Reddit)" onfocus="warningFunction()" required>
+              placeholder="URL to the post/story highlight (IG/Twitter/Reddit)" onfocus="warningFunction()" required disabled>
           </div>
         </div>
         <div id="warning">
@@ -105,7 +105,7 @@
         </div>
         <div>
           <button id="submitButton" class="btn btn-default form-control" title="" type="submit"
-            value="Submit & don't support" name="freeSubmit" onclick="youSure()">SUBMIT</button>
+            value="Submit & don't support" name="freeSubmit" onclick="youSure()" disabled><!--SUBMIT-->Submissions closed until Sunday 16 Feb.</button>
         </div>
         <input id="emailSubject" type="hidden" name="_subject" value="" />
         <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
@@ -116,7 +116,31 @@
     <div id="bigbox-2">
       <div id="faq" class="animated fadeIn delay-1s faster">
         <center>FAQ before submission</center>
-        <button type="button" class="collapsible animated fadeInRight delay-2s">Does it matter which playlist I share?</button>
+
+        <button type="button" class="collapsible animated fadeInRight delay-2s">Why are submissions closed until Sunday 16 Feb.</button>
+        <div class="content">I am changing the sharing technicalities a bit to make it more beneficial for both of us 😊 Should only take a couple hours, so Saturday evening you can probably submit.
+          <!-- <br>
+          <br>It's important to view the submission process from the perspective of the artist and
+           consider what's reasonable to ask of an artist (in terms of sharing a playlist) for review of a song and for placement of a song.
+           <br><br>
+           If you have happen to have any thoughts on this matter, feel free to email mjaschmidtsubmissions@gmail.com, I appreciate any suggestions.
+                     -->
+          <!-- I will be taking into account the following:
+          <ul>
+          <li>People don't want to share a playlist before being placed in one. Makes sense.</li>
+          <li>Twitter is not as effective as Instagram. So likely will no longer be an option.</li>
+        </ul> 
+        The new system will likely be as follows:
+        <ul>
+        <li>You share the playlist on your IG story (only 24 hours) to qualify for consideration.</li>
+        <li>In return, you receive a full review of the song and whether you qualify for placement.</li>
+        <li>If you qualify and want to be placed, you make an IG post or IG highlight of the playlist you will be placed in.</li>
+      </ul>
+      If you have any thoughts, please email me at mjaschmidtsubmissions@gmail.com. I appreciate all suggestions. -->
+
+        </div>
+
+        <!-- <button type="button" class="collapsible animated fadeInRight delay-2s">Does it matter which playlist I share?</button>
         <div class="content">No. Your song will be put in the playlist it fits best (and with many followers).
           So pick a playlist you genuinely like to share. 😊</div>
         <button type="button" class="collapsible animated fadeInRight delay-3s">How do I get the playlist URL?</button>
@@ -129,7 +153,8 @@
           <br>* <a href="https://www.reddit.com/r/spotify/submit" target="_blank">reddit.com/r/spotify/submit</a>
           <br>* <a href="https://www.reddit.com/r/SpotifyHHH/submit" target="_blank">reddit.com/r/SpotifyHHH/submit</a>
           <br>* <a href="https://www.reddit.com/r/spotifyplaylists/submit"
-            target="_blank">reddit.com/r/spotifyplaylists/submit</a>
+            target="_blank">reddit.com/r/spotifyplaylists/submit</a> -->
+
         </div>
         <!-- <button type="button" class="collapsible">What guarantee do I have that you add me?</button>
         <div class="content">
