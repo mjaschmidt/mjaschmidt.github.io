@@ -12,7 +12,7 @@ body {
 #bodyContainer {
   background-color: rgb(40, 40, 40);
   padding: 20px;
-  /* max-width: 450px; */
+  max-width: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -24,9 +24,11 @@ body {
 
 #bigbox-1 {
   min-width: 300px;
-  max-width: 350px;
+  max-width: 500px;
   margin-left: 5px;
   margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 #bigbox-2 {
@@ -50,7 +52,7 @@ body {
 
 #big-box-1 {
   min-width: 300px;
-  max-width: 350px;
+  max-width: 700px;
   margin-right: 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
@@ -169,6 +171,15 @@ iframe {
 .newTab[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0 3px -1 5px;
+}
+
+.followerCount {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  background-color: #373737;
+  padding: 2px;
+  border-radius: 5px;
 }
 
 #playlistsAbove {
