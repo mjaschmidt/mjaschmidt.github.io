@@ -43,13 +43,36 @@
     background-color: lightgray !important
 }
 
+.d3
+{
+    width: 300px;
+}
+
+#b-good {
+    background-color: rgb(0, 121, 70) !important
+}
+
+#b-bad {
+    background-color: rgb(160, 0, 0) !important
+}
+
 .d5
 {
     display: flex;
     justify-content: center;
-    width: 297px;
+    /* width: 297px; */
+    width: 270px;
 }
 
-#reviewtext {
-    height: 500px;
+#b-clear 
+{
+    width: 50px;
+}
+
+#reviewLine {
+    height: 100px;
+}
+
+#reviewResult {
+    height: 200px;
 }

@@ -3146,12 +3146,12 @@ var rA = ["Beat was really chill",
     "I think there is a lot of room for improvement for the rapper, as well as the vocalist doing the chorus",
     "I mean, the chorus is written just fine - I just dislike the voice - this could be a personal thing though",
     "The rapper could definitely improve on things besides his voice - like make his flow more interesting"]
-    
+
 alert('HI')
 // alert(rA[1001])
 
 
-function addWord(id) {
+function generate(id) {
     let sentence = " "
     while (sentence.length < 150){
         word = document.getElementById(id).value;
@@ -3178,8 +3178,20 @@ function addWord(id) {
         });
         sentence = sentence.concat(arrayReviewBox[0], ". ", arrayReviewBox[1], ". ", arrayReviewBox[2], ". ") 
     }
-    document.getElementById("reviewtext").value = sentence;
+    document.getElementById("reviewLine").value = sentence;
 }
+
+function clearResult(){
+    document.getElementById("reviewResult").value = "";
+}
+
+function save() {
+    let text = document.getElementById("reviewLine").value;
+    // alert(text)
+    document.getElementById("reviewResult").value += text;
+    document.getElementById("reviewLine").value = "";
+}
+
 
 
 

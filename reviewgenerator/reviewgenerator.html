@@ -37,9 +37,9 @@
         <button id="b-lyrics" type="button" class="d2 btn" onclick="addWord(id)" value="2lyrics">Lyrics</button>
     </div>
     <div id="box-3">
+        <button id="b-bad" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3bad">Bad</button>
         <button id="b-good" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3good">Good</button>
-        <button id="b-repetitive" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3repetitive">Repetitive</button>
-        <button id="b-boring" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3boring">Boring</button>
+        <!-- <button id="b-boring" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3boring">Boring</button>
         <button id="b-great" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3great">Great</button>
         <button id="b-unique" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3unique">Unique</button>
         <button id="b-lacking variation" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3lacking in variation">Lacking in variation</button>
@@ -47,14 +47,18 @@
         <button id="b-generic" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3generic">Generic</button>
         <button id="b-refreshing" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3refreshing">Refreshing</button>
         <button id="b-disliked" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3disliked">Disliked</button>
-        <button id="b-liked" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3liked">Liked</button>
+        <button id="b-liked" type="button" class="d3 btn btn-dark" onclick="addWord(id)" value="3liked">Liked</button> -->
     </div>
     <div id="box-4">
-        <textarea id="reviewtext" class="form-control" aria-label="With textarea"></textarea>
+        <textarea id="reviewLine" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <div id="box-6">
+        <textarea id="reviewResult" class="form-control" aria-label="With textarea"></textarea>
     </div>
     <div id="box-5">
-        <button id="b-song" type="button" class="d5 btn btn-danger"">(Re-)generate</button>
-        <button id="b-chorus" type="button" class="d5 btn btn-success">Next line</button>
+        <button id="b-song" type="button" class="d5 btn btn-primary" onclick="generate(id)">(Re-)generate</button>
+        <button id="b-chorus" type="button" class="d5 btn btn-success" onclick="save()">Next line</button>
+        <button id="b-clear" type="button" class="d5 btn btn-danger" onclick="clearResult()">C</button>
     </div>
 </div>
 
