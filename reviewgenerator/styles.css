@@ -1,0 +1,55 @@
+#main-box
+{
+    display: flex;
+    flex-direction: column;
+    width: 600;
+}
+
+#box-1
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: rgb(226, 246, 253);
+}
+#box-2
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 105, 82);
+}
+#box-3
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(23, 80, 99);   
+}
+
+.d1n {
+    width: 50px;
+}
+
+.d1 {
+    width:200px;
+}
+
+.d2 {
+    width: 110px;
+    background-color: rgb(172, 255, 223) !important
+}
+.d2:hover
+{
+    background-color: lightgray !important
+}
+
+.d5
+{
+    display: flex;
+    justify-content: center;
+    width: 297px;
+}
+
+#reviewtext {
+    height: 500px;
+}
