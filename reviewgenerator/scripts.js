@@ -3168,23 +3168,13 @@ function addWord(id) {
     let S2 = Math.floor(Math.random() * 3148);     // returns a random
     let S3 = Math.floor(Math.random() * 3148);     // returns a random
     let S4 = Math.floor(Math.random() * 3148);     // returns a random
-    // let arrayReviewBoxLengths = [int(rA[S1].length), int(rA[S2].length), int(rA[S3].length), int(rA[S4].length)]
-    // let arrayReviewBox = [rA[S1], rA[S2], rA[S3], rA[S4]]
-    // arrayReviewBox = Arrays.sort(arrayReviewBox, (rA[S1], rA[S2], rA[S3], rA[S4])->Integer.compare(rA[S1].length(), rA[S2].length(), rA[S3].length(), rA[S4].length()));
-    // arrayReviewBox = Arrays.sort(arrayReviewBox);
 
     let arrayReviewBox = [rA[S1], rA[S2], rA[S3], rA[S4]];
 
     arrayReviewBox.sort(function(a,b){
         return a.length - b.length; //ASC, For Descending order use: b - a
     });
-    alert(arrayReviewBox[0])
 
-
-    
-    // rA[S2].length;
-    // rA[S3].length;
-    // rA[S4].length;
     let sentence = " "
     sentence = sentence.concat(arrayReviewBox[0], ". ", arrayReviewBox[1], ". ", arrayReviewBox[2], ". ") 
     document.getElementById("reviewtext").value = sentence;
