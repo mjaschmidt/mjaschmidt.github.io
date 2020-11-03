@@ -3241,7 +3241,7 @@ var reviewArray = ["Beat was really chill",
     "I mean, the chorus is written just fine - I just dislike the voice - this could be a personal thing though",
     "the rapper could definitely improve on things besides his voice - like make his flow more interesting"]
 
-alert('HI')
+// alert('HI')
 // alert(reviewArray[1001])
 
 
