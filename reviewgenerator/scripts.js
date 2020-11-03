@@ -3152,30 +3152,32 @@ alert('HI')
 
 
 function addWord(id) {
-    word = document.getElementById(id).value;
-    // alert(word.substring(1,))
-    if (word[0] == '1') {
-        // alert('This is a section')
-    }
-    else if (word[0] =='2'){  // Element    
-        // alert('This is an element')
-    }
-    else {  // Evaluation       
-        // alert('This is an evaluation')
-    }
-    let S1 = Math.floor(Math.random() * 3148);     // returns a random
-    let S2 = Math.floor(Math.random() * 3148);     // returns a random
-    let S3 = Math.floor(Math.random() * 3148);     // returns a random
-    let S4 = Math.floor(Math.random() * 3148);     // returns a random
-
-    let arrayReviewBox = [rA[S1], rA[S2], rA[S3], rA[S4]];
-
-    arrayReviewBox.sort(function(a,b){
-        return a.length - b.length; //ASC, For Descending order use: b - a
-    });
-
     let sentence = " "
-    sentence = sentence.concat(arrayReviewBox[0], ". ", arrayReviewBox[1], ". ", arrayReviewBox[2], ". ") 
+    while (sentence.length < 150){
+        word = document.getElementById(id).value;
+        sentence = " "
+        // alert(word.substring(1,))
+        if (word[0] == '1') {
+            // alert('This is a section')
+        }
+        else if (word[0] =='2'){  // Element    
+            // alert('This is an element')
+        }
+        else {  // Evaluation       
+            // alert('This is an evaluation')
+        }
+        let S1 = Math.floor(Math.random() * 3148);     // returns a random
+        let S2 = Math.floor(Math.random() * 3148);     // returns a random
+        let S3 = Math.floor(Math.random() * 3148);     // returns a random
+        let S4 = Math.floor(Math.random() * 3148);     // returns a random
+
+        let arrayReviewBox = [rA[S1], rA[S2], rA[S3], rA[S4]];
+
+        arrayReviewBox.sort(function(a,b){
+            return a.length - b.length; //ASC, For Descending order use: b - a
+        });
+        sentence = sentence.concat(arrayReviewBox[0], ". ", arrayReviewBox[1], ". ", arrayReviewBox[2], ". ") 
+    }
     document.getElementById("reviewtext").value = sentence;
 }
 
