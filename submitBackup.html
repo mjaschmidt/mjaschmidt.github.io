@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit your song</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="../js/codeAcademy.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+  <div id="bodyContainer">
+  
+    
+    <div id="bigbox-1">
+      
+      <!-- <div id="viewContent" class="animated tada delay-5s slow">
+        <center><a href="\" target="_blank">View content of my playlists</a></center>
+      </div> -->
+      <div id="box-container" class="">
+        <!-- <div class="box"><iframe src=https://open.spotify.com/embed/playlist/4wqsTRPEhAmkQty2Xg3cZN" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/4wqsTRPEhAmkQty2Xg3cZN" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">250</span>
+        </div> -->
+        <!-- <div class="box"><iframe src=https://open.spotify.com/embed/playlist/1lbetlBe5owxNgkGe0bzp8" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/1lbetlBe5owxNgkGe0bzp8" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">250</span>
+        </div> -->
+        <!-- <div class="box"><iframe src=https://open.spotify.com/embed/playlist/1xgIt5zE3mZDegVwfjXUED" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/1xgIt5zE3mZDegVwfjXUED" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">250</span>
+        </div> -->
+        <div class="box"><iframe src="https://open.spotify.com/embed/playlist/789oq8uxp4xRi9t4fNWQxa" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/789oq8uxp4xRi9t4fNWQxa" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">450</span>
+        </div>
+        <div class="box"><iframe src="https://open.spotify.com/embed/playlist/1rNbWinCaCRoBxO598Y1SE" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/1rNbWinCaCRoBxO598Y1SE" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">700</span>
+        </div>
+        <div class="box"><iframe src="https://open.spotify.com/embed/playlist/4BSIiLTu7qzDZLDdkHaty9" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/4BSIiLTu7qzDZLDdkHaty9" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">1000</span>
+        </div>
+        <div class="box"><iframe src="https://open.spotify.com/embed/playlist/1siUb796okDFpHCK5CBzIF" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/1siUb796okDFpHCK5CBzIF" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">1000</span>
+        </div>
+        <div class="box"><iframe src=https://open.spotify.com/embed/playlist/4h9R7i8LUdYMFd3zddV6uJ" width="300"
+            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <a href="https://open.spotify.com/playlist/4h9R7i8LUdYMFd3zddV6uJ" target="_blank" class="newTab"
+            title="Open playlist"></a>
+            <span class="followerCount">900</span>
+        </div>
+      </div>
+
+
+      <div id="playlistsAbove" class="animated">
+        <center>Your song will end up in one of these playlists.</center>
+      </div>
+
+      <div id="formcontainer">
+        <form class="form-inline" action="https://formspree.io/mjaschmidtsubmissions@gmail.com" method="POST" />
+        <div>
+          <div>
+            <input id="inputEmail" class="form-control" type="email" name="emailSender" placeholder="Your email"
+              onchange="updateSubject()" required>
+          </div>
+          <div>
+            <input id="inputURL" class="form-control" type="url" name="spotifyURL" placeholder="Your spotify track URL"
+              required>
+          </div>
+          <div>
+            <input id="inputSocial" class="form-control" type="url" name="socialURL"
+              placeholder="Your Instagram" onfocus="warningFunction()" required>
+          </div>
+        </div>
+        <!-- <div id="warning"> -->
+          <!-- <sub>1. I check whether you actually shared one of my playlists before I check out your song. (duh!
+            right?)
+            So don't fill in some random link in the third field, because the submission will be ignored. -->
+          <!-- 1. If this field does not link to a post sharing one of my playlists—the submission will be ignored.
+          <br> -->
+          <!-- 2. if you share through IG story—make sure to add the story as highlight otherwise I will not be able to
+            verify it once it expires—meaning it won't count! -->
+          <!-- 2. If you share through IG story—make sure to add the story as Highlight—otherwise submission will be ignored!
+          </sub> -->
+
+       
+        <div>
+          <button id="submitButton" class="btn btn-default form-control" title="" type="submit"
+            value="Submit & don't support" name="freeSubmit" onclick="youSure()" disabled>
+            Submissions disabled until further notice</button>
+        </div> 
+        <!-- <br>
+        If I like your song, I will add it to a playlist, on one condition 🧐 
+        <br><br>
+        You have to make a seperate IG highlight for this playlist. You may of course remove this once the song goes out of the playlist.
+        <br><br>
+        💞<br><br>Let's help each other out! -->
+            
+      </div>
+      </div>
+        <input id="emailSubject" type="hidden" name="_subject" value="" />
+        <input type="hidden" name="_next" value="https://mjaschmidt.github.io/thankyou.html" />
+        </form>
+     
+    </div>
+
+
+
+    <!-- <button type="button" class="collapsible">What guarantee do I have that you add me?</button>
+        <div class="content">
+          All submissions get a detailed review, so you can be sure I really listen to your song. If your song is
+          actually
+          good, why would I not
+          add it? It benefits us both.
+          <br><br>
+          Worst case scenario is that you only get a detailed review out of this which will help you improve your music
+          😉 -->
+    <!--
+        <a href="https://drive.google.com/drive/folders/1UAgBSLWCZInX1cJgbKmIDhJDRmEUnqSH?usp=sharing" target="_blank" style="text-decoration:underline">Click here</a>
+        to see the reviews and placements of all songs that have been submitted (since Feb. 5).-->
+  </div>
+  <!-- <button type="button" class="collapsible">What determines whether I get added?</button>
+        <div class="content">
+          The quality of your post and the quality of your song.
+          <!--
+        <a href="https://drive.google.com/drive/folders/1UAgBSLWCZInX1cJgbKmIDhJDRmEUnqSH?usp=sharing" target="_blank" style="text-decoration:underline">Click here</a>
+        to see the reviews and placements of all songs that have been submitted (since Feb. 5).-->
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--
+  <div id="submissionSection" class="animated fadeInUp delay-5s slower">
+    <div id="bottom-box">
+      <br>
+      <div id="big-box-1">
+        <br>
+        <center>
+          <div style="font-family: 'Open Sans', sans-serif; margin-bottom: 5px;"><b>After submission FAQ</b>&nbsp
+            &nbsp<sub>(click to expand)</sub></div>
+        </center>
+
+        <button type="button" class="collapsible collapsible2">Where is my song?</button>
+        <div class="content">You did not share a playlist on your IG story, or I simply haven't updated the latest submissions yet.
+      </div>
+        <button type="button" class="collapsible collapsible2">My song has status Pending?</button>
+        <div class="content">It usually takes about 2 days before the song gets reviewed. </div>
+
+        <button type="button" class="collapsible collapsible2">Where can I find my review and placement?</button>
+        <div class="content">You can find it <a href="http://tiny.cc/sdqujz" target="_blank">here</a> once it's
+          reviewed.</div>
+          <button type="button" class="collapsible collapsible2">My song has status Qualified?</button>
+        <div class="content">This means your song can get added to a playlist, check  <a href="http://tiny.cc/sdqujz" target="_blank">here</a>
+        to which playlist the song will be added to. All you need to is step 2 of the submission process, and you will be added.</div>
+        <button type="button" class="collapsible collapsible2">My song, which was placed, has status Disqualified?</button>
+        <div class="content">The highlight or post—sharing the playlist your song was added to—is no longer on your profile.</div>
+
+      </div>
+
+
+      <div id="big-box-2">
+        <div id="latestSubmissions">
+          <br>
+          <center>Latest submissions</center>
+        </div>
+        <div id="lastUpdated">
+          <center>Last updated on February 16th, 2020.</center>
+        </div>
+
+        <div id="box-container-2">
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/5s8yD1uwe9dUSJm3IiPiYa" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Qualified</a>
+            </span>
+            <br>
+            <span class="date">15 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/5s8yD1uwe9dUSJm3IiPiYa" style="color: lightgreen"
+                target="_blank">Stargazing</a></span>
+          </div>
+
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/3S9gSXaYBn8q6yWCp6XaTf" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="notplaced"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">No placement</a>
+            </span>
+            <br>
+            <span class="date">14 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/3S9gSXaYBn8q6yWCp6XaTf" style="color: lightgreen"
+                target="_blank">Codes Zu Den-</a></span>
+          </div>
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/6HliH0G7frzP3zHeJjs9oZ" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Placed</a>
+            </span>
+            <br>
+            <span class="date">14 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/6HliH0G7frzP3zHeJjs9oZ" style="color: lightgreen"
+                target="_blank">Heartbreak's on-</a></span>
+          </div>
+
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/72itdUT1v7mzwRdSPG0elz" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Placed</a>
+            </span>
+            <br>
+            <span class="date">13 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/72itdUT1v7mzwRdSPG0elz" style="color: lightgreen"
+                target="_blank">Why Me</a></span>
+          </div>
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/31CbAD39wwGAaMO6nRZhkS" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="notplaced"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">No placement</a>
+            </span>
+            <br>
+            <span class="date">12 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/31CbAD39wwGAaMO6nRZhkS" style="color: lightgreen"
+                target="_blank">Pull Up</a></span>
+          </div>
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/album/0gC6zcY2qKg7McVHAQiqh6" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="disqualified"><a href="http://tiny.cc/sdqujz" style="color: white"
+                target="_blank">Disqualified</a>
+            </span>
+            <br>
+            <span class="date">11 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/album/0gC6zcY2qKg7McVHAQiqh6" style="color: lightgreen"
+                target="_blank">Shawty Drippin</a></span>
+          </div>
+
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/6SGXQ0vJ0rZoSGi7gDkAKG?" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Placed</a>
+            </span>
+            <br>
+            <span class="date">10 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/6SGXQ0vJ0rZoSGi7gDkAKG" style="color: lightgreen"
+                target="_blank">One Day</a></span>
+          </div>
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/6G8AG3I8M11uwJV8WJNFYg?" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Placed</a>
+            </span>
+            <br>
+            <span class="date">10 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/6G8AG3I8M11uwJV8WJNFYg" style="color: lightgreen"
+                target="_blank">Give Me a Vybe</a></span>
+          </div>
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/2CQRzHLvqRzFhEqx8PNdq0" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Placed</a>
+            </span>
+            <br>
+            <span class="date">9 Feb. </span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/2CQRzHLvqRzFhEqx8PNdq0" style="color: lightgreen"
+                target="_blank">Soul Purpose</a></span>
+          </div>
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/2w3b8jZEHxnSf4lPibAFbg" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="notplaced"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">No placement</a>
+            </span>
+            <br>
+            <span class="date">6 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/2w3b8jZEHxnSf4lPibAFbg" style="color: lightgreen"
+                target="_blank">Next Lane</a></span>
+          </div>
+          <div class="box-recent"><iframe src="https://open.spotify.com/embed/track/2Es0eHeopnFmfz4PthEgKS" width="300"
+              height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <span class="placed"><a href="http://tiny.cc/sdqujz" style="color: white" target="_blank">Placed</a>
+            </span>
+            <br>
+            <span class="date">5 Feb.</span>
+            <br>
+            <span class="name"><a href="https://open.spotify.com/track/2Es0eHeopnFmfz4PthEgKS" style="color: lightgreen"
+                target="_blank">Numbers</a></span>
+          </div>
+        </div>
+        <!-- <div id="lastUpdated">
+          <center>last updated on February 13th 2020 (manual process)</center>
+        </div> -->
+      </div>
+    </div>
+    <!-- <center><sub style="font-family: 'Open Sans', sans-serif; color: lightgray">Contact: mjaschmidtsubmissions@gmail.com</sub></center><br> -->
+  </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+</hmtl>
